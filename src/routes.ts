@@ -4,6 +4,6 @@ export const router = createBrowserRouter([
   {
     path: '/',
     lazy: () =>
-      import('./modules/home/home.view').then((module) => ({ Component: module.default })),
+      import('./modules/home.view').then((module) => ({ Component: module.default })),
   },
 ]);
