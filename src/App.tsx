@@ -1,12 +1,19 @@
 import React from 'react';
-import { RouterProvider } from 'react-router-dom';
-import { router } from './routes';
+import Banner from './components/Banner'
+import Footer from './components/Footer'
+import Title from './components/Title'
+import Example from './components/ApiExample'
+import Features from './components/Features'
 
 export default class App extends React.Component {
   render(): React.ReactNode {
     return (
       <div className="app">
-        <RouterProvider router={router} />
+        <Banner />
+        <Title />
+        <Features />
+        <Example />
+        <Footer />
       </div>
     );
   }
