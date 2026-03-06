@@ -1,7 +1,5 @@
 import React from 'react'
 import '../assets/css/features.less'
-import { icons } from 'antd/lib/image/PreviewGroup'
-
 
 
 const features = [
@@ -22,8 +20,14 @@ const features = [
     }
 ]
 
+interface FeatureProps {
+    title: string
+    description: string
+    icon: string
+}
 
-const FeatureItem = ({ title, description, icon }) => (
+
+const FeatureItem = ({ title, description, icon }: FeatureProps) => (
     <div className="feature-item">
         <div className="feature-icon">{icon}</div>
         <h3 className="feature-title">{title}</h3>
@@ -37,7 +41,7 @@ export default class Features extends React.Component {
         return (
             <div className="features">
                 <div className="container">
-                    <div className="section-title">why ?</div>
+                    <div className="section-title"><span>Why Choose Us ?</span></div>
                     <div className="features-grid">
                         {features.map((f, index) => (
                             <FeatureItem key={index} {...f} />

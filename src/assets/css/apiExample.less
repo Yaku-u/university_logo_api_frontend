@@ -1,19 +1,29 @@
+@import 'home.less';
+
 .api-example {
-    width: 80vw;
-    margin: 30px auto;
-    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
     background-color: #fff;
-    // border: 1px solid #000;
-    color: #363636;
+    
 
     & .example-container {
-        // width: 80vw;
+        width: 65vw;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
     }
 }
 
+.example-item{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 80px;
+    padding: 20px;
+}
 
 
 .example-text {
@@ -23,22 +33,23 @@
         text-align: left;
         margin-bottom: 1.5rem;
         font-size: 28px;
-        font-weight: bold;
+        font-weight: 500;
+        color: #212121;
     }
 
     & p {
         font-size: 1.2rem;
-        color: #2c2c2c;
+        color: #747474;
         line-height: 1.6;
     }
 }
 
 .example-code {
     flex: 1;
-    background: #f9f9f9;
+    background: @bg-gradient;
+    font-size: 16px;
     padding: 1rem 2rem 0;
-    border-radius: 2px;
-    // box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-    border: 0.5px solid #DEE2E6;
+    border-radius: 12px;
+    border: 1px solid transparent;
     overflow-x: auto;
 }

@@ -4,15 +4,23 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    padding-right: 100px;
     // border: 1px solid black;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.6);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     position: sticky;
     z-index: 100;
     top: 0;
 
-    & div {
-        padding: 14px;
+    & .content {
+        width: 30vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+
+        & div{
+            padding: 14px;
+        }
+
     }
 }
