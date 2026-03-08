@@ -1,24 +1,25 @@
-@import 'home.less';
-
 .features {
-    padding: 60px;
-    margin: 30px auto;
-    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
 
     & .section-title {
         font-size: 50px;
+        margin: 80px 50px 50px 50px;
         font-weight: bolder;
-        padding: 20px;
         text-align: center;
 
         & span {
-            background: @features;
+            background: var(--features);
             background-clip: text;
             color: transparent;
         }
     }
 
     & .features-grid {
+        width: 70vw;
+        // max-width: 1200px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 50px;
@@ -29,26 +30,30 @@
 .feature-item {
     padding: 30px;
     border-radius: 12px;
-    background: @bg-gradient;
+    background: var(--bg-gradient);
+    box-shadow: var(--box-shadow);
     transition: transform 0.3s;
     border: 1px solid transparent;
 
     &:hover {
-        transform: translateY(-5px);
+        transform: translateY(-8px);
     }
 
     & .feature-icon {
-        font-size: 30px;
+        font-size: 36px;
         margin-bottom: 20px;
     }
 
     & .feature-title {
-        font-size: 20px;
+        font-size: 24px;
         margin-bottom: 10px;
+        color: var(--font-color);
     }
 
     & .feature-desc {
         color: #666;
+        font-size: 14px;
+        color: var(--title-font);
     }
 
 }

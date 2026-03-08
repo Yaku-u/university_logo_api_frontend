@@ -1,7 +1,7 @@
 import React from "react"
 import '../assets/css/title.less'
 
-import logos from '../assets/img/b.png'
+import logos from '../assets/img/bg.png'
 
 
 export default class Title extends React.Component {
@@ -15,8 +15,8 @@ export default class Title extends React.Component {
                 </div>
                 <div className="image-mask"></div>
                 <div className="home-text">
-                    <div className="title"><span>咕咕嘎嘎咕咕嘎嘎</span></div>
-                    <div className="description">Gone with the wind <br />喵喵喵喵喵喵喵喵喵喵喵</div>
+                    <div className="title"><span>University Logo API</span></div>
+                    <div className="description">A simple API for fetching university logos <br /></div>
                     <div className="button"><a href="">Get Started</a></div>
                 </div>
             </div>

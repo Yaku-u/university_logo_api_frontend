@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.less'
 import Banner from './components/Banner'
 import Footer from './components/Footer'
 import Title from './components/Title'

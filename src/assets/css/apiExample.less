@@ -1,12 +1,10 @@
-@import 'home.less';
-
 .api-example {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 60px 0;
-    background-color: #fff;
-    
+    background-color: var(--bg-color);
+
 
     & .example-container {
         width: 65vw;
@@ -17,7 +15,7 @@
     }
 }
 
-.example-item{
+.example-item {
     display: flex;
     align-items: center;
     justify-self: center;
@@ -31,22 +29,23 @@
 
     & .section {
         text-align: left;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         font-size: 28px;
         font-weight: 500;
-        color: #212121;
+        color: var(--font-color);
     }
 
     & p {
         font-size: 1.2rem;
-        color: #747474;
-        line-height: 1.6;
+        color: var(--title-font);
+        line-height: 1.8;
     }
 }
 
 .example-code {
     flex: 1;
-    background: @bg-gradient;
+    background: var(--bg-gradient);
+    color: var(--title-font);
     font-size: 16px;
     padding: 1rem 2rem 0;
     border-radius: 12px;
